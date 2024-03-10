@@ -1,0 +1,383 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+*{
+    font-family: 'Manrope', sans-serif;
+}
+
+body{
+    background-color: #fff;
+    min-width: 375px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: url(./images/bg-pattern.svg) ;
+    background-repeat: no-repeat;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 89px 0 64px;
+    margin: 0 24px;
+    background: url(./images/pattern-circles.svg) center;
+    background-repeat: no-repeat;
+    
+}
+
+h1{
+    width: 312px;
+    margin: 0 7px 8px;
+    font-family: 'Manrope',sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+    text-align: center;
+    color: #293356;
+}
+
+header p{  
+    width: 326px;
+    font-size: 13px;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 600;
+    line-height: 1.77;
+    text-align: center;
+    color: #848ead;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 24px 88px;
+    border-radius: 8px;
+    box-shadow: 0 20px 30px -5px rgba(127, 137, 185, 0.15);
+    background-color: #fff;
+}
+
+h2{
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 1.71px;
+    text-align: center;
+    color: #848ead;
+    margin: 34px 0 25px;
+}
+
+/*     slider           */
+
+.slider{
+    position: relative;
+}
+
+.range{
+    width: 279px;
+    height: 8px;
+    margin: 40px 0;
+    border-radius: 5px;
+    background-color: #ecf0fb;
+    appearance: none;
+}
+
+.range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background:url(./images/icon-slider.svg), #10D8C4;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: 0px 15px 30px rgba(0, 255, 231, 0.6);
+    transition: 0.1s;
+    cursor: grab;
+    position: relative;
+    z-index: 2;
+  }
+  
+  .range::-webkit-slider-thumb:hover {
+    background-color: #7AEADF;
+  }
+
+  .range::-webkit-slider-thumb:active {
+    -webkit-appearance: none;
+    cursor: grabbing;
+    background-color: #24AEA1;
+  }
+
+ .range-active{
+    background-color: #a4f3eb;
+    height: 8px;
+    position: absolute;
+    top: 40px;
+    left: 0;
+ }
+
+
+/*   slider end */
+
+.price{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 24px 0 34px;
+}
+
+.price p{
+    font-size: 32px;
+    font-weight: 800;
+    letter-spacing: -0.8px;
+    text-align: right;
+    color: #293356;
+    margin-right: 10px;
+}
+
+.price span{
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+    color: #848ead;
+}
+
+/* checkbox style */
+
+.billing-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+  
+.checkbox {
+    display: none;
+  }
+
+.ball-label {
+    position: relative;
+    background-color: #cfd8ef;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 15px;
+    padding: 4px 25px 4px 4px;
+    margin: 0 12px;
+    width: 43px;
+    height: 22px;
+    cursor: pointer;
+  }
+
+  .ball-label:hover{
+    background-color: #7aeadf;
+  }
+
+  .ball-label:active {
+    background-color: #24aea1;
+  }
+
+  .billing{
+    font-size: 12px;
+    font-weight: 600;
+    text-align: center;
+    color: #848ead;
+}
+
+.billing-container span{
+    border-radius: 9.5px;
+    background-color: #feede8;
+    padding: 2px 8px 3px 7px;
+    margin-left: 5.5px;
+    font-size: 10px;
+    font-weight: 800;
+    text-align: center;
+    color: #ff8d68;
+}
+
+.ball {
+    background-color: #fff;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    border-radius: 50%;
+    width: 14px;
+    height: 14px;
+    transition: transform 0.15s linear;
+  }
+
+.ball-right{
+    background-color: #fff;
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    border-radius: 50%;
+    width: 14px;
+    height: 14px;
+    transition: transform 0.15s linear;
+}
+
+.ball:hover{
+    cursor: pointer;
+    background-color: #7aeadf;
+}
+
+.discount-desktop{
+    display: none;
+}
+
+/* checkbox style end */
+
+hr{
+    width: 327px;
+    height: 1px;
+    margin: 38px 0 24px;
+    background-color: #ecf0fb;
+}
+
+ul{
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+}
+
+li{
+    font-size: 12px;
+    font-weight: 600;
+    text-align: center;
+    color: #848ead;
+}
+
+li img{
+    margin-right: 16px;
+}
+
+button{
+    border: none;
+    padding: 12px 46px 13px;
+    margin: 33px 0 32px;
+    border-radius: 20.5px;
+    background-color: #293356;
+    font-size: 12px;
+    font-weight: 800;
+    text-align: center;
+    color: #becdff;
+}
+
+button:hover{
+    cursor: pointer;
+    color: #fff;
+}
+
+/*                                      */
+
+@media screen and (min-width:1440px){
+    
+    
+    header{
+        padding: 104px 0 92px;
+        margin: 0;
+    }
+    
+    h1{
+        width: 393px;
+        margin: 0 0 12px;
+        font-size: 28px;
+
+    }
+    
+    header p{  
+        width: 367px;
+        font-size: 15px;
+        line-height: normal;
+    }
+
+    br{
+        display: none;
+    }
+    
+    .card{
+        margin: 0 0 137px;
+                
+    }
+
+    .slider-container{
+        width: 540px;
+        display: flex;
+        flex-direction:row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin: 40px 0 ;
+        
+    }
+
+    h2{
+        width: fit-content;
+        font-size: 14px;
+        letter-spacing: 2px;
+        margin: 0 103px 0 0;
+        order: -2;
+    }
+    
+    
+    .range{
+        width: 444px;
+        order: 0;
+    }
+
+    .price{
+        width: fit-content;
+        justify-content: center;
+        margin:  0;
+        order: -1;
+    }
+    
+    .price p{
+        font-size: 40px;
+        letter-spacing: -1px;
+        margin-right: 8px;
+    }
+    
+    .price span{
+        font-size: 16px;
+    }
+    
+    .ball-label{
+        margin: 0 16px;
+    }
+    
+    .discount-desktop{
+        display: inline;
+        margin-left: 9px;
+    }
+
+    .discount-mobile{
+         display: none;
+    }
+    
+    
+    hr{
+        width: 540px;
+        margin: 40px 0 32px;
+    }
+    
+    .offer{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 44px 0 48px;
+        margin-bottom: 33px;
+    }
+    ul{
+        align-items: flex-start;
+    }
+
+
+
+
+}
